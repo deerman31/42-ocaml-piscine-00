@@ -13,16 +13,23 @@ let ft_print_comb2 () =
     else loop n1 (n2 + 1) ((n1, n2) :: acc)
   in
   let rec print_lst lst =
+    let print_num_helper n =
+      if n < 10 then (
+        print_char '0';
+        print_int n)
+      else print_int n
+    in
+
     match lst with
     | [] -> print_char '\n'
     | (n1, n2) :: rest ->
-        print_int n1;
+        print_num_helper n1;
         print_char ' ';
-        print_int n2;
-        if n1 != n2_max then
-          (print_char ',';
-           print_char ' ');
-            print_lst rest
+        print_num_helper n2;
+        if n1 != n1_max then (
+          print_char ',';
+          print_char ' ');
+        print_lst rest
   in
   print_lst (loop 0 1 [])
 
