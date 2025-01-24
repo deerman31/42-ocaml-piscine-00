@@ -19,7 +19,6 @@ let ft_print_comb2 () =
         print_int n)
       else print_int n
     in
-
     match lst with
     | [] -> print_char '\n'
     | (n1, n2) :: rest ->
