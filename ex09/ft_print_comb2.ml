@@ -32,5 +32,4 @@ let ft_print_comb2 () =
   in
   print_lst (loop 0 1 [])
 
-let test () = ft_print_comb2 ()
-let () = test ()
+let () = ft_print_comb2 ()

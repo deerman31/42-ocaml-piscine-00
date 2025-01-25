@@ -6,17 +6,10 @@ let ft_is_palindrome str =
   in
   loop 0 (String.length str - 1)
 
-
-let test () =
+let () =
   if ft_is_palindrome "0123456789" then print_endline "OK"
   else print_endline "NG";
-  if ft_is_palindrome "radar" then print_endline "OK"
-  else print_endline "NG";
-  if ft_is_palindrome "madam" then print_endline "OK"
-  else print_endline "NG";
-  if ft_is_palindrome "car" then print_endline "OK"
-  else print_endline "NG";
-  if ft_is_palindrome "" then print_endline "OK"
-  else print_endline "NG"
-
-let () = test ()
+  if ft_is_palindrome "radar" then print_endline "OK" else print_endline "NG";
+  if ft_is_palindrome "madam" then print_endline "OK" else print_endline "NG";
+  if ft_is_palindrome "car" then print_endline "OK" else print_endline "NG";
+  if ft_is_palindrome "" then print_endline "OK" else print_endline "NG"

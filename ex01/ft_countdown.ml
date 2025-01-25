@@ -23,11 +23,9 @@ let ft_countdown x =
   in
   loop x
 
-let test () =
+let () =
   ft_countdown 3;
   print_char '\n';
   ft_countdown 0;
   print_char '\n';
   ft_countdown (-1)
-
-let () = test ()

@@ -37,5 +37,4 @@ let ft_print_comb () =
   in
   print_lst lst
 
-let test () = ft_print_comb ()
-let () = test ()
+let () = ft_print_comb ()

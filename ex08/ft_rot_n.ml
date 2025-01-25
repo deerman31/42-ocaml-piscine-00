@@ -21,7 +21,7 @@ let ft_rot_n n str =
   in
   String.map alphabet_rot str
 
-let test () =
+let () =
   print_endline (ft_rot_n 1 "abcdefghijklmnopqrstuvwxyz");
   print_endline (ft_rot_n 13 "abcdefghijklmnopqrstuvwxyz");
   print_endline (ft_rot_n 42 "0123456789");
@@ -31,5 +31,3 @@ let test () =
   print_endline (ft_rot_n 0 "Damned !");
   print_endline (ft_rot_n 42 "");
   print_endline (ft_rot_n 1 "NBzlk qnbjr !")
-
-let () = test ()

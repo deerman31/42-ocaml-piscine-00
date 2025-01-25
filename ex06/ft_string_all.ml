@@ -18,14 +18,10 @@ let ft_string_all p str =
   in
   loop (String.length str - 1)
 
-
-let is_digit c = c >= '0' && c <= '9'
-
-let test () =
+let () =
+  let is_digit c = c >= '0' && c <= '9' in
   if ft_string_all is_digit "0123456789" then print_endline "OK"
   else print_endline "NG";
   if ft_string_all is_digit "" then print_endline "OK" else print_endline "NG";
   if ft_string_all is_digit "E0123456789" then print_endline "OK"
   else print_endline "NG"
-
-let () = test ()

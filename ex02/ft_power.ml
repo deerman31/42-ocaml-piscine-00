@@ -6,5 +6,4 @@ let ft_power n1 n2 =
   in
   loop 1 n2
 
-let test () = print_int (ft_power 2 4)
-let () = test ()
+let () = print_endline (string_of_int (ft_power 2 4))

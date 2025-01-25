@@ -23,5 +23,4 @@ let ft_print_alphabet () =
   in
   ft_print lst
 
-let test () = ft_print_alphabet ()
-let () = test ()
+let () = ft_print_alphabet ()
